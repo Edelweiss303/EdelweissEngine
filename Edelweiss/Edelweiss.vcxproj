@@ -11,10 +11,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Src\Test.h" />
+    <ClInclude Include="src\Edelweiss.h" />
+    <ClInclude Include="src\Edelweiss\Application.h" />
+    <ClInclude Include="src\Edelweiss\Core.h" />
+    <ClInclude Include="src\Edelweiss\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Src\Test.cpp" />
+    <ClCompile Include="src\Edelweiss\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -64,7 +67,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;EDLWS_PLATFORM_WINDOWS;EDLWS_BUILD_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
